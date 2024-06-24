@@ -1,0 +1,93 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the fade-in animation to the entire body */
+body {
+    opacity: 0; 
+    animation: fadeInAnimation 4s ease forwards; 
+}
+
+body
+   {background-image: url(image/bg\ 4.jpg);}
+
+header {
+    background-color: #393939; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+.top-bar {
+    display: flex; 
+    justify-content: center; 
+}
+
+.top-bar a {
+    color: rgb(3, 12, 15);
+    background-color: rgb(196, 221, 244);
+    text-decoration: none;
+    padding: 20px;
+    margin: 0 140px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    white-space: nowrap; 
+    transition: all 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: rgb(0, 119, 255);
+    background-color: rgb(0, 115, 255);
+}
+
+.top-bar a:visited {
+    color: black;
+}
+
+.top-bar a:active {
+    color: maroon;
+    background-color: rgb(114, 90, 231);
+}
+
+/* Target <b> and its following text */
+b, dd, li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px; 
+    color: #000000; 
+
+}
+
+dd, li {
+    margin-bottom: 10px; 
+}
+
+dd {
+    background-color: #7988dc; 
+    padding: 10px; 
+    margin: 10px ;
+    border-radius: 5px; 
+    max-width: 600px; /* Maximum width of the square */
+}
+
+/* Style for <dd> elements, excluding <b> */
+dd:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+p, div {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    color: #000000; 
+    line-height: 1.5;
+    margin-bottom: 10px; 
+    text-decoration: underline;
+}
+
+p a {
+    color: #1E90FF; 
+    text-decoration: underline; 
+}
